@@ -42,6 +42,11 @@ const Resume = () => {
       imageSrc: "/images/project-2.png",
       link: "http://sarvestan.app",
     },
+      {
+      name: "Caresync",
+      imageSrc: "/images/project-4.png",
+      link: "https://care-sync-appwrite.vercel.app/patient/68ec1c8a000c77105756/register",
+    },
     {
       name: "Kado-UI library",
       imageSrc: "/images/project-3.jpg",
