@@ -2,17 +2,22 @@
 
 import Image from "next/image";
 import { AuroraText } from "../ui/AuroraText";
+import Link from "next/link";
 
 type ProjectCardProps = {
   name: string;
   imageSrc: string;
+  link: string;
 };
 
-const ProjectCard = ({ name, imageSrc }: ProjectCardProps) => {
+const ProjectCard = ({ name, imageSrc, link }: ProjectCardProps) => {
   return (
     <div className="flex flex-col gap-4 items-center rounded-2xl p-4 h-65 sm:h-90 md:h-110  justify-between">
       <p className="font-semibold text-lg">{name}</p>
-      <div className="w-full h-full overflow-hidden rounded-xl border">
+      <Link
+        href={link}
+        className="w-full h-full overflow-hidden rounded-xl border"
+      >
         <Image
           src={imageSrc}
           alt={name}
@@ -20,16 +25,28 @@ const ProjectCard = ({ name, imageSrc }: ProjectCardProps) => {
           height={1000}
           className="object-cover w-full h-full"
         />
-      </div>
+      </Link>
     </div>
   );
 };
 
 const Resume = () => {
   const projects = [
-    { name: "MelkToday", imageSrc: "/images/project-1.png" },
-    { name: "Sarvestan", imageSrc: "/images/project-2.png" },
-    { name: "Kado-UI library", imageSrc: "/images/project-3.jpg" },
+    {
+      name: "MelkToday",
+      imageSrc: "/images/project-1.png",
+      link: "http://melktoday.ir",
+    },
+    {
+      name: "Sarvestan",
+      imageSrc: "/images/project-2.png",
+      link: "http://sarvestan.app",
+    },
+    {
+      name: "Kado-UI library",
+      imageSrc: "/images/project-3.jpg",
+      link: "http://melktoday.ir",
+    },
   ];
 
   return (
@@ -45,6 +62,7 @@ const Resume = () => {
         <div className="grid grid-cols-1 gap-6 w-full max-w-6xl px-4">
           {projects.map((project) => (
             <ProjectCard
+            link={project.link}
               key={project.name}
               name={project.name}
               imageSrc={project.imageSrc}
