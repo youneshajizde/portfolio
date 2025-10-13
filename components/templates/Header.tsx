@@ -2,6 +2,7 @@ import { DownloadIcon, LinkedinIcon } from "lucide-react";
 import React from "react";
 import { AuroraText } from "../ui/AuroraText";
 import { WordRotate } from "../ui/WordRotate";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -31,10 +32,13 @@ const Header = () => {
           member.
         </p>
         <div className="mx-auto flex items-center gap-3 mt-6">
-          <button className="btn btn-transparent font-medium text-black rounded-full text-sm flex items-center gap-1.5">
+          <Link
+            href={"http://www.linkedin.com/in/youneshajizade"}
+            className="btn btn-transparent font-medium text-black rounded-full text-sm flex items-center gap-1.5"
+          >
             <span className="text-[#1793d6]">My Linkedin</span>
             <LinkedinIcon className="text-[#1793d6]" size={18} />
-          </button>
+          </Link>
           <button className="font-medium shadow-sm text-white rounded-full text-sm btn btn-gradient flex items-center gap-1.5 ">
             <span> My Resume</span>
             <DownloadIcon size={18} />

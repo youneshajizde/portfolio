@@ -2,6 +2,7 @@
 
 import { SendIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -39,15 +40,15 @@ const Navbar = () => {
           <p></p>
           <p>About</p>
           <p>Projects</p>
-          <button
-            onClick={() => router.push("")}
+          <Link
+            href={"http://t.me/lejonas"}
             className="f-align gap-1.5 btn btn-gradient shadow-sm text-white "
           >
             Lets talk!
             <span>
               <SendIcon size={17} color="white" />
             </span>
-          </button>
+          </Link>
         </div>
       </div>
     </section>

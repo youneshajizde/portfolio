@@ -24,7 +24,7 @@ export function FadeText({
   }, [sentences.length, displayTime, transitionTime]);
 
   return (
-    <div className="text-white text-xl sm:text-2xl md:text-4xl font-bold overflow-hidden">
+    <div className="text-white text-lg sm:text-2xl md:text-4xl font-bold overflow-hidden">
       <AnimatePresence mode="wait">
         <motion.p
           key={sentences[index]}

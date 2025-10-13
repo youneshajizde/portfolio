@@ -1,13 +1,6 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google"; // Only Geist
 import "./globals.css";
 import Navbar from "@/components/templates/Navbar";
-
-const geist = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={geist.variable}>
+    <html lang="en">
       <body className="min-h-screen">
         <div className="f-center p-3">
           <Navbar />

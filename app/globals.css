@@ -1,6 +1,38 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist-ExtraBold.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -65,7 +97,6 @@
     }
   }
 }
-
 
 :root {
   --radius: 0.625rem;
@@ -144,7 +175,7 @@
     @apply bg-background text-foreground;
   }
   html {
-    font-family: var(--font-geist), sans-serif;
+    font-family: "Geist", sans-serif;
   }
 }
 
@@ -160,23 +191,22 @@
   @apply min-w-[90%] mx-auto;
 }
 
-
 @utility gradient-x {
-  @apply bg-gradient-to-r from-[#1793d6] to-[#47b8f6]
+  @apply bg-gradient-to-r from-[#1793d6] to-[#47b8f6];
 }
 
 @utility gradient-y {
-  @apply bg-gradient-to-b from-[#47b8f6] to-[#1793d6]
+  @apply bg-gradient-to-b from-[#47b8f6] to-[#1793d6];
 }
 
 @utility btn {
-@apply  rounded-full px-4 py-3 cursor-pointer
+  @apply rounded-full px-4 py-3 cursor-pointer;
 }
 
 @utility btn-gradient {
-  @apply gradient-x
+  @apply gradient-x;
 }
 
 @utility btn-transparent {
-  @apply border border-[#1793d6]
+  @apply border border-[#1793d6];
 }
