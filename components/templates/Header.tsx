@@ -39,10 +39,13 @@ const Header = () => {
             <span className="text-[#1793d6]">My Linkedin</span>
             <LinkedinIcon className="text-[#1793d6]" size={18} />
           </Link>
-          <button className="font-medium shadow-sm text-white rounded-full text-sm btn btn-gradient flex items-center gap-1.5 ">
+          <Link
+            href={"https://uploadkon.ir/uploads/77a115_25youneshajizade.pdf"}
+            className="font-medium shadow-sm text-white rounded-full text-sm btn btn-gradient flex items-center gap-1.5 "
+          >
             <span> My Resume</span>
             <DownloadIcon size={18} />
-          </button>
+          </Link>
         </div>
       </div>
     </section>
