@@ -41,7 +41,7 @@ const squares = [
   {
     top: 15,
     left: 80,
-    gradient: "linear-gradient(135deg, #f9fafb, #dde1e6)", // pale light gray
+    gradient: "linear-gradient(135deg, #f9fafb, #dde1e6)",
     alt: "TypeScript",
     imgSrc: "/images/typescript.svg",
   },
@@ -56,9 +56,9 @@ const SkillSet = () => {
       <div className="flex flex-col items-center space-y-3">
         <p className="text-3xl md:text-4xl font-bold z-10 relative text-center max-w-xl">
           <AuroraText className="bg-gradient-to-r from-[#1793d6] to-[#47b8f6] bg-clip-text text-transparent">
-            Professionals
+            Dedication
           </AuroraText>{" "}
-          wont stop learning!
+          is the key
         </p>
         <Image
           alt="person"
