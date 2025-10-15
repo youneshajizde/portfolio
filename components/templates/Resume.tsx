@@ -55,7 +55,7 @@ const Resume = () => {
   ];
 
   return (
-    <section className="mt-6">
+    <section id="projects" className="mt-6">
       <div className="flex flex-col items-center justify-center space-y-6">
         <p className="text-4xl font-bold text-center">
           Check out my <br /> latest{" "}

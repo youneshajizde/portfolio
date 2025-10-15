@@ -50,6 +50,7 @@ const squares = [
 const SkillSet = () => {
   return (
     <section
+      id="about"
       className=" mx-auto relative flex items-center justify-center mt-6 h-[700px]"
       style={{ "--square-size": "60px" } as React.CSSProperties}
     >

@@ -38,8 +38,8 @@ const Navbar = () => {
 
         <div className="f-align gap-3 text-sm ">
           <p></p>
-          <p>About</p>
-          <p>Projects</p>
+          <Link href={"#about"}>About</Link>
+          <Link href={"#projects"}>Projects</Link>
           <Link
             href={"http://t.me/lejonas"}
             className="f-align gap-1.5 btn btn-gradient shadow-sm text-white "
