@@ -50,7 +50,7 @@ const Resume = () => {
     {
       name: "Kado-UI library",
       imageSrc: "/images/project-3.jpg",
-      link: "http://melktoday.ir",
+      link: "",
     },
   ];
 
