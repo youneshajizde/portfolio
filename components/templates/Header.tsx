@@ -1,3 +1,5 @@
+"use client"
+
 import { DownloadIcon, LinkedinIcon } from "lucide-react";
 import React from "react";
 import { AuroraText } from "../ui/AuroraText";
