@@ -44,7 +44,7 @@ const Header = () => {
           <button
             onClick={() =>
               router.push(
-                "https://uploadkon.ir/uploads/77a115_25youneshajizade.pdf"
+                "https://uploadkon.ir/uploads/b36b18_25youneshajizade-cv.pdf"
               )
             }
             className="font-medium shadow-sm text-white rounded-full text-sm btn btn-gradient flex items-center gap-1.5 "
